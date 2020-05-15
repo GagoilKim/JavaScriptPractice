@@ -1,12 +1,8 @@
 'use strict'
-window.addEventListener("load", function(){
-    let txt = this.document.getElementById("input1");
-    let txt2 = this.document.getElementById("input2");
-    let txt3 = this.document.getElementById("input3");
-    let button = this.document.getElementById("button1");
-    
-    button.onclick = function(){
-        console.log('add')
-    };
-
-});
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation')
+const deleteButtons = document.querySelectorAll('[data-delete')
+const allClearButtons = document.querySelectorAll('[data-all-clear')
+const equalsButtons = document.querySelectorAll('[data-equals')
+const previousButtons = document.querySelectorAll('[data-previous')
+const currentButtons = document.querySelectorAll('[data-current')

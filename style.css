@@ -1,0 +1,47 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+
+}
+.calculator-grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    
+}
+
+.span-2{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/ -1;
+    display: flex;
+    padding: 10px;
+    align-items: flex-end;
+    flex-direction: column;
+    
+}
+
+.output .previous{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.output .current{
+    font-size: 2.5rem;
+}
